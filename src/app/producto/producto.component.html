@@ -1,0 +1,13 @@
+
+
+<div *ngIf="esvisible">
+
+    <li *ngFor="let producto of productos">
+        {{producto.nombre}}
+        {{producto.costo}}
+
+
+    </li>
+
+</div>
+<button mat-fab extended (click)="ocultarlista()" >mostrar/ocultar</button>
